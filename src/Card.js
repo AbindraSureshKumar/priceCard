@@ -11,7 +11,7 @@ function Card({item}){
           {
             item.features.map((list)=>{
                 return(
-                    <li className={!list.isEnable ? 'text-muted':''}>
+                    <li className={!list.isEnable ? 'text-muted':''}>      
                         <span className="fa-li">
                         {
                           list.isEnable ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faTimes}/>
